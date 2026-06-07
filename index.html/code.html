@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BABYLONIC | Sovereign Performance Sanctuary</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Hanken+Grotesk:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&amp;family=Sora:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#e5e2e1",
+                    "tertiary-container": "#b2b3b3",
+                    "on-surface": "#e5e2e1",
+                    "primary-fixed-dim": "#e9c349",
+                    "outline": "#99907c",
+                    "on-secondary": "#313030",
+                    "inverse-surface": "#e5e2e1",
+                    "on-primary": "#3c2f00",
+                    "surface-container-low": "#1c1b1b",
+                    "surface-bright": "#3a3939",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "on-secondary-fixed-variant": "#474746",
+                    "on-primary-container": "#554300",
+                    "on-background": "#e5e2e1",
+                    "primary": "#f2ca50",
+                    "tertiary-fixed-dim": "#c6c6c6",
+                    "surface-container-lowest": "#0e0e0e",
+                    "error": "#ffb4ab",
+                    "surface-dim": "#131313",
+                    "surface-variant": "#353534",
+                    "background": "#131313",
+                    "on-secondary-fixed": "#1b1b1b",
+                    "error-container": "#93000a",
+                    "tertiary-fixed": "#e2e2e2",
+                    "tertiary": "#cecece",
+                    "on-error-container": "#ffdad6",
+                    "on-primary-fixed": "#241a00",
+                    "inverse-primary": "#735c00",
+                    "on-secondary-container": "#b7b5b4",
+                    "inverse-on-surface": "#313030",
+                    "outline-variant": "#4d4635",
+                    "secondary-container": "#474746",
+                    "primary-fixed": "#ffe088",
+                    "secondary": "#c8c6c5",
+                    "surface": "#131313",
+                    "on-tertiary-container": "#444546",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "on-tertiary": "#2f3131",
+                    "surface-container-highest": "#353534",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "surface-container": "#201f1f",
+                    "on-surface-variant": "#d0c5af",
+                    "on-primary-fixed-variant": "#574500",
+                    "surface-tint": "#e9c349",
+                    "surface-container-high": "#2a2a2a",
+                    "primary-container": "#d4af37",
+                    "on-error": "#690005"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px",
+                    "container-max": "1440px",
+                    "unit": "8px"
+            },
+            "fontFamily": {
+                    "body-md": ["Hanken Grotesk"],
+                    "label-sm": ["Hanken Grotesk"],
+                    "headline-lg": ["Sora"],
+                    "headline-lg-mobile": ["Sora"],
+                    "headline-md": ["Sora"],
+                    "headline-sm": ["Sora"],
+                    "label-md": ["Hanken Grotesk"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "display-lg": ["Sora"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["36px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.3", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                    "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            scroll-behavior: smooth;
+        }
+        .glass-panel {
+            background: rgba(28, 28, 28, 0.6);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(229, 225, 225, 0.1);
+        }
+        .premium-glow:hover {
+            box-shadow: 0 0 25px rgba(242, 202, 80, 0.2);
+            border-color: #f2ca50;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(to right, #f2ca50, #d4af37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#1C1C1C]/60 backdrop-blur-xl border-b border-white/10 shadow-2xl transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex items-center gap-2">
+<img alt="Babylonic Logo" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRpltYkWX8mfZUh9b6s0bm9tnThvLO3nCg4SbzEBG38yOEwJcr2DfYKOIWuRTyvnG5mY18BLCbvUErWO_1EqjGYpilQWwDvuJMecg2jbNNWFJXoIre1WZoeDE9B4AO41Ejs_W1MQKcAtkjgGeQmkrzD0sKoF_jvr94BiBuFsjf2OHtuzdYsQsOcSO0MO3XJ2V2rqc-fw4zSgsyKrffqWXsQyfal6C6HSJ3HMOgxqYoPRPEIulOa6gbvJOZcfbmFwgb4okRPwU_p7WS"/>
+<span class="font-display-lg text-headline-sm tracking-tighter text-primary">BABYLONIC</span>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md uppercase tracking-widest text-primary border-b border-primary pb-1 transition-colors duration-300" href="#">The Sanctuary</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-secondary hover:text-primary transition-colors duration-300" href="#">Athletes</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-secondary hover:text-primary transition-colors duration-300" href="#">Tiers</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-secondary hover:text-primary transition-colors duration-300" href="#">Gallery</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-secondary hover:text-primary transition-colors duration-300" href="#">Legacy</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="hidden lg:block font-label-md text-label-md uppercase tracking-widest text-secondary hover:text-primary transition-colors" href="#">CLIENT PORTAL</a>
+<button class="bg-primary text-on-primary font-label-md text-label-md uppercase px-6 py-3 tracking-widest hover:brightness-110 transition-all premium-glow">JOIN THE ELITE</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/60 to-background z-10"></div>
+<img class="w-full h-full object-cover grayscale-[0.3] brightness-[0.4]" data-alt="A cinematic, low-angle shot of a powerful elite athlete lifting heavy weights in a dimly lit, high-tech fitness sanctuary. The lighting is dramatic and high-contrast, with golden rim lighting highlighting the athlete's physique. The atmosphere is dense with a slight mist, conveying a sense of intense discipline and premium exclusivity. Deep obsidian tones and radiant gold highlights dominate the visual palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzydDfpv4kuNa-uXHJwPhFj4h_Ak62kg5tbF3nKnHh7odDWaIlTKtXP_bUe-bR9ALkIDnBfqbu8HV2_LAIG5seAEXPYSRhacYOX2Q6xBJude1qtkx6YqIJ4553je77s83wan2fJ4lv8SZiwM0fvXfheHI_MmKW7vdsjqk-Gm6Vy85KYEF5NnGpnxzq_JDONZ_D6yo2Pi-05jCSc2cPnrz1vqGXlHtkYMfGLHWBkiaXF6UjIDQwE9B5JC64ar6Sh--rMO25neILlYqb"/>
+</div>
+<div class="relative z-20 text-center px-margin-mobile max-w-4xl">
+<span class="font-label-md text-label-md uppercase tracking-[0.3em] text-primary mb-6 block" data-aos="fade-up">Sovereignty Through Performance</span>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg mb-8 leading-none" data-aos="fade-up" data-aos-delay="100">
+                FORGE YOUR LEGACY AT <span class="gold-gradient-text">BABYLONIC</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface/80 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                Where ancient strength, modern discipline, and absolute excellence converge to redefine the human limit.
+            </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center items-center" data-aos="fade-up" data-aos-delay="300">
+<button class="w-full sm:w-auto bg-primary text-on-primary font-label-md text-label-md uppercase px-12 py-5 tracking-widest hover:scale-105 transition-all shadow-[0_0_20px_rgba(242,202,80,0.3)]">Join The Elite</button>
+<button class="w-full sm:w-auto border border-white/20 glass-panel text-on-surface font-label-md text-label-md uppercase px-12 py-5 tracking-widest hover:border-primary transition-all">Book Trial</button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+<span class="material-symbols-outlined text-primary">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- About Section: The Sanctuary -->
+<section class="py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto overflow-hidden">
+<div class="grid lg:grid-cols-2 gap-20 items-center">
+<div class="relative group">
+<div class="absolute -inset-4 border border-primary/20 transition-all group-hover:-inset-6 duration-700"></div>
+<img class="relative w-full aspect-[4/5] object-cover grayscale" data-alt="Ultra-modern gym interior with high-end, sleek black strength training equipment arranged with mathematical precision. The flooring is polished dark stone, reflecting the soft gold recessed lighting from the architectural ceiling. The space feels like a high-end luxury spa and high-performance workshop combined. Deep charcoal and gold accents create a sense of untouchable quality and architectural grandeur." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTkrAeGecWvZG5bAj9ffnC1Hdy8KoP8Vpdzt0udkffevpNsoHO72Vm11GBpVHu2C1pQ_gmIPo0lrbBO6eFr5Pda4uPBImuF7qtueIIeu3F3CUJHlfetW_fccwQzip7rjvbJ-F1Fwg29NTiE38kG8nDesO17rT0O6rNULMjxr7GC75QHb767YPR2ANBHPAFEORgqFha7YB9pPUP2jXjiUAfkGin37qyCGA2LH-x_8nTe-rUa3cmuGCtk_1BLsmKYbqTNDxoobxQqLJu"/>
+<div class="absolute bottom-10 -right-10 bg-primary p-8 hidden md:block">
+<span class="font-display-lg text-display-lg leading-none text-on-primary">12</span>
+<p class="font-label-md text-label-md uppercase text-on-primary/80 mt-2">Global Sanctuaries</p>
+</div>
+</div>
+<div>
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary mb-4 block">The Philosophy</span>
+<h2 class="font-headline-lg text-headline-lg mb-8 leading-tight">The Sanctuary of Performance</h2>
+<div class="space-y-6 text-on-surface/70">
+<p class="font-body-lg text-body-lg">At BABYLONIC, we don't just build muscle; we architect sovereignty. Our environment is a curated fusion of high-precision engineering and architectural grandeur.</p>
+<p>Every piece of equipment is hand-selected from the world's leading performance labs. Our space is designed to remove distractions, leaving only the pure resonance of work and the pursuit of human optimization.</p>
+</div>
+<div class="mt-12 grid grid-cols-2 gap-8">
+<div class="flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">verified</span>
+<h4 class="font-headline-sm text-headline-sm">Mastery</h4>
+<p class="text-sm opacity-60">Elite coaches with scientific backgrounds.</p>
+</div>
+<div class="flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">architecture</span>
+<h4 class="font-headline-sm text-headline-sm">Precision</h4>
+<p class="text-sm opacity-60">Custom-tailored bio-hacking protocols.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Membership Plans -->
+<section class="py-32 bg-surface-container-lowest relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/2 h-1/2 bg-primary/5 rounded-full blur-[150px]"></div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative z-10">
+<div class="text-center mb-20">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-4">CHOOSE YOUR ASCENSION</h2>
+<div class="h-1 w-24 bg-primary mx-auto"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Basic -->
+<div class="glass-panel p-10 flex flex-col h-full hover:-translate-y-2 transition-transform duration-500">
+<span class="font-label-md text-label-md uppercase text-secondary mb-4">Foundation</span>
+<h3 class="font-headline-md text-headline-md mb-6 uppercase">Basic</h3>
+<div class="text-4xl font-display-lg mb-10">$149<span class="text-lg opacity-40">/MO</span></div>
+<ul class="space-y-4 mb-12 flex-grow">
+<li class="flex items-center gap-3 text-on-surface/70"><span class="material-symbols-outlined text-primary text-sm">check</span> Sanctuary Access (6am-9pm)</li>
+<li class="flex items-center gap-3 text-on-surface/70"><span class="material-symbols-outlined text-primary text-sm">check</span> Basic Performance Data</li>
+<li class="flex items-center gap-3 text-on-surface/70"><span class="material-symbols-outlined text-primary text-sm">check</span> Recovery Zone Access</li>
+</ul>
+<button class="w-full py-4 border border-white/10 hover:border-primary transition-colors uppercase font-label-md">Select Tier</button>
+</div>
+<!-- Premium -->
+<div class="glass-panel p-10 flex flex-col h-full relative overflow-hidden transform scale-105 shadow-2xl border-primary/30">
+<div class="absolute top-0 right-0 bg-primary text-on-primary px-4 py-1 text-[10px] uppercase font-bold tracking-widest">Most Coveted</div>
+<span class="font-label-md text-label-md uppercase text-primary mb-4">Ascension</span>
+<h3 class="font-headline-md text-headline-md mb-6 uppercase">Premium</h3>
+<div class="text-4xl font-display-lg mb-10">$299<span class="text-lg opacity-40">/MO</span></div>
+<ul class="space-y-4 mb-12 flex-grow">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> 24/7 Global Sanctuary Access</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> Monthly Bio-Metric Analysis</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> Personal Locker &amp; Concierge</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> 4 Monthly Private Sessions</li>
+</ul>
+<button class="w-full py-4 bg-primary text-on-primary hover:brightness-110 transition-colors uppercase font-label-md">Ascend Now</button>
+</div>
+<!-- Elite -->
+<div class="glass-panel p-10 flex flex-col h-full hover:-translate-y-2 transition-transform duration-500 border-primary/10">
+<span class="font-label-md text-label-md uppercase text-secondary mb-4">Sovereignty</span>
+<h3 class="font-headline-md text-headline-md mb-6 uppercase">Elite</h3>
+<div class="text-4xl font-display-lg mb-10">$599<span class="text-lg opacity-40">/MO</span></div>
+<ul class="space-y-4 mb-12 flex-grow">
+<li class="flex items-center gap-3 text-on-surface/70"><span class="material-symbols-outlined text-primary text-sm">check</span> All Premium Privileges</li>
+<li class="flex items-center gap-3 text-on-surface/70"><span class="material-symbols-outlined text-primary text-sm">check</span> Daily 1-on-1 Performance Coaching</li>
+<li class="flex items-center gap-3 text-on-surface/70"><span class="material-symbols-outlined text-primary text-sm">check</span> Custom Supplement Protocol</li>
+<li class="flex items-center gap-3 text-on-surface/70"><span class="material-symbols-outlined text-primary text-sm">check</span> Private Recovery Suite</li>
+</ul>
+<button class="w-full py-4 border border-primary/20 hover:border-primary transition-colors uppercase font-label-md">Join The Elite</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Facilities Bento Grid -->
+<section class="py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="mb-20">
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary mb-4 block">The Infrastructure</span>
+<h2 class="font-headline-lg text-headline-lg">LUXURY ZONES</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[800px]">
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden border border-white/5">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A grand, high-ceilinged strength training arena featuring rows of custom-branded gold and black power racks. The lighting is focused and dramatic, with spotlighting on each workout station. The walls are dark textured stone with golden neon light accents. The floor is industrial-grade black rubber with inlaid brass logos. A visual embodiment of high-intensity performance in a premium architectural setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMHmOSq_pdW3M-pE9iZE2mATgdrFoTqpT6iAjKObewjGi_LLOLkBKvXTcn7KgKBOlnGWKb8OKrRQHWPTppBSm_ZEqu9oGxKHwZETQL9yC9LjWapLJ2ZqmHlaS7EIoGHlfKECwuynsYYRFNDabmAaRbt-bnqsGnt1Qi5rcWY97OJl5o0LADlDNR410yUD_JJUB1pdECbItHzbPcQeBhkD6bLtiAPM2JpgfDGsV9ovFyerCmA36-yPbB8xd8rLjwe4Tn0RprjY-jbcff"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-8 flex flex-col justify-end">
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">STRENGTH ARENA</h4>
+<p class="text-on-surface/80">Hyper-specialized equipment for maximum torque and power development.</p>
+</div>
+</div>
+<div class="md:col-span-2 relative group overflow-hidden border border-white/5">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A minimalist, futuristic recovery studio with sleek white treatment tables and chrome cryotherapy tanks. The ambient lighting is a cool, soothing blue and soft platinum. Large floor-to-ceiling windows overlook a darkened city skyline. The space conveys a sense of high-tech healing and elite wellness. Pristine, quiet, and technologically advanced." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK5GvLlhz7mkuqB4D0L_G3zKKEB6tDkrOUvJkINKF7Ul9XAqEUg3bI943kFaoILhJcdZKK3TDjDFq_ZdPSEb71n7lKGZk-MBVq5B2EqaPzKHq2dvJxl9nElZW4biK08viuQOWqZbFnISqIorr2sp_MvDBL07v2CMSSDnHqS189ncxf0_nHakp3IYIt9k08vNBoZIko9H98ZfoIkLc2Dxk_jtgqwbYI28jy1mqd3ONjk7oGUZxQpIA5wZihmqdFXZZ5yXixIitStfHw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-8 flex flex-col justify-end">
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">RECOVERY SUITE</h4>
+<p class="text-on-surface/80">Cryotherapy, infrared saunas, and hydro-regeneration protocols.</p>
+</div>
+</div>
+<div class="relative group overflow-hidden border border-white/5">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A rows of high-performance cardio machines with integrated touchscreens, facing a large high-definition digital mural of the Earth from space. The floor is dark and reflective, and the ceiling has glowing linear light strips. The atmosphere is energetic yet premium and focused. Futuristic cardio training experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcit1-TGg4DO16VXB2vwNe1dn1kFaZDQQG2xIqy7lEIfLhSXe0pJD_qg_4mbTwOpKy_ljDuoystK58jYB_czlQhdLfYzDuG-YPtvQ32J94v7FjDeKeXzszIOqKXRbZijcVXqWOhKT1ukw8ytXQimHbNsEr3cqGa4KsMsRiLRmWmGOJJ3rPB_PFXEsJ1UcUVVuoUB79yWLfeuR1-qjBAigmx0szaKHNAkcbCmYCFlHFlLVN8-OObca_Hj6NVRu8EjCqfilusesdSfO1"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-end">
+<h4 class="font-label-md text-label-md text-primary mb-1">CARDIO HUB</h4>
+</div>
+</div>
+<div class="relative group overflow-hidden border border-white/5">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Luxury locker room with dark wood lockers, gold-plated fixtures, and warm atmospheric lighting. Large mirrors with built-in LED rings. A sense of a private member's club. High-end grooming products and plush white towels. The design is elegant, heavy, and extremely high-end." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8t7VdhNAvtnL4JyjCmjyF3p6RwqzOTN0AJXdJ-z4kGEGKu4vo1cKJiIjgVfHuFD4dm4scJMqCv-qNRQfX2XkLz2hfRsmRUgsbNXGWO6yCTZCgy41Fhmla7dRKbEpOpyZplfZqpT9G5-ES-Wfi4gn6T7Y9Cpxr5QN_4_21Ck1FmIyNOO2YqO67yrFS8htAEBUG3tcXfyNVKt9kKyKc3-GfbRCbsSeLrNo6nUQaulP1Ij_zI0GtSLADoQmJGwiD-Hcdbax4HVZcABOm"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-end">
+<h4 class="font-label-md text-label-md text-primary mb-1">THE LOUNGE</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- Success Stories -->
+<section class="py-32 bg-surface overflow-hidden relative">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
+<h2 class="font-headline-lg text-headline-lg mb-16">TRANSFORMATION ARCHIVES</h2>
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="w-full md:w-1/2 aspect-video glass-panel relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale brightness-75" data-alt="Black and white high-fashion portrait of a man showing significant muscular transformation. His physique is illuminated with dramatic side lighting that emphasizes texture and tone. He stands in a dark, minimalist studio. The mood is triumphant, serious, and powerful. High-contrast artistic photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8u9aJibTOZ7LKFzoLHt6nn52r41o1HtF9KKvB9T3j-zyVEZa-I9nRPHqrfurkKnu2UK74Beinbrs3b-YW0dcu5w1t-Wl1qaUS-xbIj6UJyqmZgq9U292st97UoteqAnraHQ10zWGVO5_6Wz2XJHe6NQ4zZDhjAfaD2qBu4Yo7X80yL3Y8LI05JMdeVRv5anwl0kcXCeeM9Oto7PC7c_MZHOWRobce-U95tAIBA_uRtXyT76RMIpoe5BY-Fxwl_xfQw57pzXpASxn6"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<button class="bg-primary/20 backdrop-blur-md rounded-full p-6 text-primary border border-primary/50 hover:bg-primary/40 transition-all">
+<span class="material-symbols-outlined text-4xl">play_arrow</span>
+</button>
+</div>
+</div>
+<div class="w-full md:w-1/2 text-left">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">format_quote</span>
+<p class="font-body-lg text-body-lg italic text-on-surface/90 mb-8 leading-relaxed">
+                        "BABYLONIC isn't just a gym; it's an engineering firm for the human body. My performance in the boardroom and the arena has tripled since I committed to their protocol. This is where sovereignty begins."
+                    </p>
+<div>
+<h4 class="font-headline-sm text-headline-sm">MARCUS VANE</h4>
+<p class="font-label-md text-label-md text-primary uppercase">CEO, Vane Global</p>
+</div>
+<div class="flex gap-4 mt-10">
+<button class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:border-primary transition-all"><span class="material-symbols-outlined">arrow_back</span></button>
+<button class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:border-primary transition-all"><span class="material-symbols-outlined">arrow_forward</span></button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact & Map -->
+<section class="py-32 bg-surface-container-lowest">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid lg:grid-cols-2 gap-16">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-8">INITIATE ACCESS</h2>
+<p class="mb-12 text-on-surface/60">Membership at BABYLONIC is by application only. Fill out the protocol below to schedule your private tour and assessment.</p>
+<form class="space-y-6">
+<div class="grid grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-md text-label-md uppercase text-secondary">Full Name</label>
+<input class="w-full bg-[#1c1c1c] border-white/10 focus:border-primary focus:ring-0 py-4 px-6 text-on-surface transition-all" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md uppercase text-secondary">Digital Address</label>
+<input class="w-full bg-[#1c1c1c] border-white/10 focus:border-primary focus:ring-0 py-4 px-6 text-on-surface transition-all" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md uppercase text-secondary">Intensity Goal</label>
+<select class="w-full bg-[#1c1c1c] border-white/10 focus:border-primary focus:ring-0 py-4 px-6 text-on-surface transition-all">
+<option>Sovereign Performance</option>
+<option>Architectural Aesthetics</option>
+<option>Longevity Protocol</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md uppercase text-secondary">Briefing</label>
+<textarea class="w-full bg-[#1c1c1c] border-white/10 focus:border-primary focus:ring-0 py-4 px-6 text-on-surface transition-all" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary font-label-md text-label-md uppercase py-5 tracking-widest hover:brightness-110 transition-all">Request Assessment</button>
+</form>
+</div>
+<div class="h-[600px] relative glass-panel overflow-hidden border border-white/10">
+<div class="absolute inset-0 bg-background/40 z-10 pointer-events-none"></div>
+<div class="w-full h-full grayscale opacity-60 hover:opacity-100 transition-opacity duration-500 cursor-crosshair" data-location="London" style="">
+<div class="w-full h-full bg-[#1c1c1c] flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-6xl">location_on</span>
+</div>
+</div>
+<div class="absolute bottom-10 left-10 z-20 glass-panel p-8 max-w-sm">
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">LONDON SANCTUARY</h4>
+<p class="text-on-surface/80 mb-4">The Shard, Level 24<br/>32 London Bridge St, London SE1 9SG</p>
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined">call</span>
+<span class="font-label-md">+44 20 7234 5678</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-background w-full py-16 border-t border-white/5">
+<div class="flex flex-col items-center gap-8 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
+<div class="flex items-center gap-3">
+<img alt="Babylonic Logo" class="h-12 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRpltYkWX8mfZUh9b6s0bm9tnThvLO3nCg4SbzEBG38yOEwJcr2DfYKOIWuRTyvnG5mY18BLCbvUErWO_1EqjGYpilQWwDvuJMecg2jbNNWFJXoIre1WZoeDE9B4AO41Ejs_W1MQKcAtkjgGeQmkrzD0sKoF_jvr94BiBuFsjf2OHtuzdYsQsOcSO0MO3XJ2V2rqc-fw4zSgsyKrffqWXsQyfal6C6HSJ3HMOgxqYoPRPEIulOa6gbvJOZcfbmFwgb4okRPwU_p7WS"/>
+<span class="font-display-lg text-headline-md text-primary tracking-tighter">BABYLONIC</span>
+</div>
+<div class="flex flex-wrap justify-center gap-12">
+<a class="font-body-md text-body-md text-secondary-container hover:text-primary transition-colors" href="#">Privacy Protocol</a>
+<a class="font-body-md text-body-md text-secondary-container hover:text-primary transition-colors" href="#">Terms of Sanctuary</a>
+<a class="font-body-md text-body-md text-secondary-container hover:text-primary transition-colors" href="#">Global Access</a>
+<a class="font-body-md text-body-md text-secondary-container hover:text-primary transition-colors" href="#">Media Kit</a>
+</div>
+<div class="flex gap-6 mt-4">
+<a class="text-on-surface/40 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-on-surface/40 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-on-surface/40 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">group</span></a>
+</div>
+<p class="text-on-surface/30 font-label-sm mt-8">© MMXXIV BABYLONIC. SOVEREIGNTY THROUGH PERFORMANCE.</p>
+</div>
+</footer>
+<script>
+        // Simple scroll interaction for nav
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-4', 'bg-[#1C1C1C]/95');
+                nav.classList.remove('h-20');
+            } else {
+                nav.classList.remove('py-4', 'bg-[#1C1C1C]/95');
+                nav.classList.add('h-20');
+            }
+        });
+
+        // Horizontal Parallax Effect for some elements
+        document.addEventListener('mousemove', (e) => {
+            const cards = document.querySelectorAll('.glass-panel');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    card.style.transform = `translate(${(x - 0.5) * 10}px, ${(y - 0.5) * 10}px)`;
+                }
+            });
+        });
+    </script>
+</body></html>
